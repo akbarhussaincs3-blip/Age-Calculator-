@@ -1,0 +1,182 @@
+    body {
+      background-color: #f2f2f2;
+      text-align: center;
+      font-family: Arial;
+      padding-top: 80px;
+    }
+
+    .calculator {
+      background-color: white;
+      width: 300px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    h1 {
+      color: #0066cc;
+    }
+
+    input {
+      padding: 10px;
+      margin: 15px;
+    }
+
+    input[type="text"],
+    input[type="time"] {
+      width: 220px;
+      padding: 12px;
+      border: 2px solid #0066cc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 12px 22px;
+      margin: 5px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      background-color: #0052a3;
+    }
+
+    #shareButton {
+      display: block;
+      margin: 18px auto 0;
+    }
+
+    #result {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    #result div {
+      width: 110px;
+      height: 110px;
+      margin: 5px;
+      padding: 12px 10px;
+      border-radius: 12px;
+      box-sizing: border-box;
+      text-align: center;
+      justify-content: center;
+      background-color: #f2f2f2;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    }
+
+    #result div:hover {
+      transform: translateY(-5px);
+    }
+
+    #result div h2 {
+      margin: 8px 0;
+      font-size: 30px;
+      color: #0066cc;
+    }
+
+    #result div p {
+      margin: 5px 0;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .dark {
+      background-color: #222;
+      color: white;
+    }
+
+    .dark .calculator {
+      background-color: #333;
+    }
+
+    .dark #result div {
+      background-color: #444;
+    }
+
+    .dark h1 {
+      color: #66b3ff;
+    }
+
+    @media (max-width: 500px) {
+
+      body {
+        padding-top: 30px;
+      }
+
+      .calculator {
+        width: 85%;
+        padding: 20px;
+      }
+
+      #result div {
+        width: 90px;
+      }
+
+      #totalAge div {
+        width: 85px;
+      }
+    }
+
+    #totalAge {
+      margin-top: 25px;
+    }
+
+    #totalAge h3 {
+      color: #0066cc;
+    }
+
+    #totalAge div {
+      display: inline-block;
+      background-color: #f2f2f2;
+      width: 105px;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    #totalAge strong {
+      display: block;
+      font-size: 20px;
+      color: #0066cc;
+      overflow-wrap: anywhere;
+    }
+
+    #totalAge p {
+      margin: 5px;
+      font-size: 13px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    #birthday {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #f2f2f2;
+      color: #0066cc;
+      text-align: center;
+    }
+
+    .dark #birthday {
+      background-color: #444;
+      color: #66b3ff;
+    }

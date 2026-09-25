@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Age Calculator</title>
+  <link rel="manifest" href="manifest.json">
+  
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="calculator">
+
+    <button onclick="toggleDarkMode()">
+      🌙 Dark Mode
+    </button>
+
+    <h1>Age Calculator</h1>
+
+    <p>Enter your Date of Birth</p>
+
+    <label for="birthDate">📅 Date of Birth</label>
+
+    <input
+      type="text"
+      id="birthDate"
+      placeholder="DD/MM/YYYY"
+    >
+
+    <label for="birthTime">⏰ Time of Birth</label>
+
+    <input
+      type="time"
+      id="birthTime"
+    >
+
+    <div id="result"></div>
+
+    <div id="birthday"></div>
+
+    <p id="totalAge"></p>
+
+    <br>
+
+    <button onclick="calculateAge()">
+      Calculate Age
+    </button>
+
+    <button onclick="resetCalculator()">
+      Reset
+    </button>
+
+    <button id="shareButton" onclick="shareResult()">
+      📤 Share Result
+    </button>
+
+    <h2>Your Age</h2>
+
+  </div>
+  
+  <script src="script.js"></script>
+  
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+</script>
+</body>
+</html>
+
+
